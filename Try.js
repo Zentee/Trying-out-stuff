@@ -1,3 +1,8 @@
+const year = Date;
+const currentMmo = FFXIV; 
+
+
+
 let dog = {
     sound: 'woof',
     talk: function(){
@@ -29,3 +34,5 @@ button.addEventListener(
     'click',
     dog.talk.bind(dog) //again bind para ficar o 'woof'
 )
+
+
