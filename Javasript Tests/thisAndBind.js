@@ -27,6 +27,8 @@ aragon.speak = talk.bind(aragorn);
 //aragorn.speak(); forma antiga
 
 let blabber = aragon.speak;
+
+
 blabber();
 
 let gollum = {

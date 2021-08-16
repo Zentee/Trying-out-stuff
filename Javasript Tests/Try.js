@@ -1,5 +1,5 @@
 const year = Date;
-const currentMmo = FFXIV; 
+const currentMmo = 'FFXIV'; 
 
 
 
@@ -28,11 +28,11 @@ boundFunction() // "woof"
 // some more shenanigans
 
 
-let button = document.getElementById('myNiceButton')
+//let button = document.getElementById('myNiceButton')
 
-button.addEventListener(
+/* button.addEventListener(
     'click',
     dog.talk.bind(dog) //again bind para ficar o 'woof'
 )
-
+ */
 
