@@ -1,0 +1,11 @@
+@import './variables';
+@import './header';
+
+
+.contact button {
+//    @include flex-direction(row, red);
+    @extend header;
+    background: lightcoral;
+    width: 100% - 20%;
+}
+
