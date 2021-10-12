@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Pseudo classes like hover and focus so we can add extra functionality */
+button {
+  padding: 2rem 4rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: lightgrey;
+  padding: 2rem 4rem;
+}
+
+button:focus {
+  background: green;
+}
+
+/* Pseudo elements adiciona o me depois do Hello se for h1::before o me aparecia antes*/
+
+h1::after {
+  content: "me";
+  font-size: 4rem;
+}
