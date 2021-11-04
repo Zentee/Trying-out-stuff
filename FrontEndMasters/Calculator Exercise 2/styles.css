@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Big main Div*/
+.calculator {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  background-color: black;
+}
+
+.resultscreen {
+  display: flex;
+  font-family: monospace;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  font-size: 3rem;
+  padding: 0.5rem;
+  height: 5rem;
+}
+
+/* Rows, sub divs */
+
+.first-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.second-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.third-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.fourth-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+.last-row {
+  display: flex;
+  align-content: stretch;
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
+
+/* Buttons */
+
+button:hover {
+  background-color: #e4e7ec;
+}
+
+button:active {
+  background-color: darkgrey;
+}
+
+.clear-btn {
+  font-size: 2rem;
+  background-color: #d8d9db;
+  height: 4rem;
+  width: 49.7%;
+  border: none;
+  cursor: pointer;
+}
+
+.goback-btn {
+  font-size: 2rem;
+  background-color: #d8d9db;
+  border: none;
+  width: 24.5%;
+  cursor: pointer;
+}
+
+.nums-btn {
+  font-size: 2rem;
+  background-color: #d8d9db;
+  border: none;
+  width: 24.5%;
+  cursor: pointer;
+}
+
+.divide-btn {
+  font-size: 2rem;
+  background-color: #df974c;
+  border: none;
+  width: 24.5%;
+  color: white;
+  cursor: pointer;
+}
+
+.divide-btn:hover {
+  background-color: #e6a663;
+  border: none;
+}
+
+.multiply {
+  font-size: 2rem;
+  background-color: #df974c;
+  border: none;
+  width: 24.5%;
+  color: white;
+  cursor: pointer;
+}
+
+.multiply:hover {
+  background-color: #e6a663;
+  border: none;
+}
+
+.minus {
+  font-size: 2rem;
+  background-color: #df974c;
+  border: none;
+  width: 24.5%;
+  color: white;
+  cursor: pointer;
+}
+
+.minus:hover {
+  background-color: #e6a663;
+  border: none;
+}
+
+.plus {
+  font-size: 2rem;
+  background-color: #df974c;
+  border: none;
+  width: 24.5%;
+  color: white;
+  cursor: pointer;
+}
+
+.plus:hover {
+  background-color: #e6a663;
+  border: none;
+}
+
+.equal {
+  font-size: 2rem;
+  background-color: #df974c;
+  border: none;
+  width: 24.5%;
+  color: white;
+  cursor: pointer;
+}
+
+.equal:hover {
+  background-color: #e6a663;
+  border: none;
+}
+
+.zero-btn {
+  font-size: 2rem;
+  background-color: #d8d9db;
+  border: none;
+  width: 74.8%;
+  cursor: pointer;
+}
