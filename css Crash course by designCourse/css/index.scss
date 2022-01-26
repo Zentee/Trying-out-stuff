@@ -6,3 +6,147 @@
   border-radius: 0px;
   position: absolute;
 }
+
+body {
+  /* nao esquecer que isto torna o default das calculations para 1 rem = 10 pixels */
+  font-size: 62.5%;
+  margin: 1.5em;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/Rectangle_1.png);
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  //overflow: hidden;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+
+  span {
+    color: red;
+  }
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 2;
+  text-transform: uppercase;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+
+  .close {
+    float: right;
+    margin: 2em;
+    width: 2.5em;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10em;
+
+    a {
+      color: black;
+      padding: 0.75em 2em;
+      display: block;
+      width: 100%;
+
+      &:hover {
+        background-color: rgb(216, 215, 215);
+      }
+    }
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  /* podiamos ter posto tambem svg em vez da classe, mas melhor com a classe senão qual o sentido de criarmos uma class*/
+  .menu {
+    width: 3em;
+    margin-top: -0.6em;
+    cursor: pointer;
+  }
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.1rem;
+}
+
+section.hero {
+  color: white;
+  height: 90vh;
+
+  .down-arrow {
+    stroke: white;
+    position: absolute;
+    bottom: 2em;
+    width: 1em;
+
+    path {
+      fill: white;
+    }
+  }
+}
+
+section.more-info {
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 11em;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+
+  .description {
+    line-height: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    margin: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+
+  nav {
+    transform: translateX(0);
+  }
+}
