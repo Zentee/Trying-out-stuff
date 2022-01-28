@@ -14,7 +14,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../img/Rectangle_1.png);
+  background: url("https://assets.codepen.io/2621168/shoe.jpg");
   background-size: cover;
   background-position-x: 20%;
   background-position-y: 20%;
@@ -23,7 +23,7 @@ a {
   height: 100vh;
   z-index: -1;
   animation: introLoad 2s forwards;
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .logo {
@@ -42,25 +42,25 @@ nav {
   background: white;
   height: 100vh;
   width: 50%;
-  z-index: 2;
+  z-index: 999;
   text-transform: uppercase;
   transform: translateX(100%);
   transition: transform 0.5s ease-in-out;
 
   .close {
     float: right;
-    margin: 2em;
-    width: 3em;
+    margin: 3.2em;
+    width: 4em;
   }
 
   ul {
     list-style-type: none;
     padding: 0;
-    margin-top: 10em;
+    margin-top: 12.8em;
 
     a {
       color: black;
-      padding: 0.75em 2em;
+      padding: 1.1em 3.2em;
       display: block;
       width: 100%;
       -webkit-text-stroke-width: 0.1px;
@@ -79,21 +79,21 @@ header {
   justify-content: space-between;
 
   /* podiamos ter posto tambem svg em vez da classe, mas melhor com a classe senão qual o sentido de criarmos uma class*/
-  svg.menu {
-    width: 3em;
-    margin-top: -0.6em;
+  svg {
+    width: 4.8em;
+    margin-top: -0.2em;
     cursor: pointer;
   }
 }
 
 h1 {
-  font-size: 2.7rem;
-  margin-top: 2em;
-  line-height: 3.3rem;
+  font-size: 4.8rem;
+  margin-top: 1.2em;
+  line-height: 5.3rem;
 }
 
 .subhead {
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 section.hero {
@@ -102,12 +102,12 @@ section.hero {
   animation: moveDown 1s ease-in-out forwards;
   opacity: 0;
 
-  .down-arrow {
+  svg.down-arrow {
     margin-top: 4em;
     stroke: white;
     position: absolute;
-    bottom: 2em;
-    width: 1em;
+    bottom: 3.2em;
+    width: 1.6em;
     animation: moveArrow 1s alternate-reverse infinite;
 
     path {
@@ -120,16 +120,17 @@ section.more-info {
   img {
     width: 100%;
     object-fit: cover;
-    height: 11em;
+    height: 17.6em;
   }
 
   .title {
     font-weight: bold;
-    font-size: 1.25rem;
+    font-size: 1.9rem;
   }
 
   .description {
-    line-height: 1.5rem;
+    line-height: 2.4rem;
+    font-size: 1rem;
   }
 }
 
@@ -139,8 +140,15 @@ section.more-info {
 
 @media only screen and (min-width: 680px) {
   body {
-    margin: 1.5em 5em;
+    margin: 2.4em 8em;
     font-family: "Poppins", sans-serif;
+  }
+
+  a {
+    &:hover {
+      background: rgb(201, 201, 201) !important;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -167,13 +175,13 @@ section.more-info {
 
       a {
         color: white;
-        padding: 0.5em 1.5em;
+        padding: 0.8em 2.4em;
         font-size: 1.2rem;
-      }
 
-      &:hover {
-        background: none;
-        text-decoration: underline;
+        &:hover {
+          background: none !important;
+          text-decoration: underline;
+        }
       }
     }
   }
@@ -181,8 +189,8 @@ section.more-info {
   .hero-img {
     left: unset;
     right: 0;
-    width: 60%;
-    height: 55em;
+    width: 50%;
+    height: 67.2em;
   }
 
   .logo {
@@ -198,7 +206,7 @@ section.more-info {
     color: black;
     height: auto;
     width: 40%;
-    margin-bottom: 12em;
+    margin-bottom: 12.8em;
 
     svg.down-arrow {
       stroke: black;
@@ -213,16 +221,16 @@ section.more-info {
   .feature {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: 3em;
-    margin-bottom: 8em;
+    gap: 4.8em;
+    margin-bottom: 12.8em;
 
     img {
-      width: 30em;
+      width: 40em;
     }
 
     .content {
       text-align: right;
-      width: 30em;
+      width: 48em;
     }
   }
 
@@ -235,7 +243,7 @@ section.more-info {
 
     .content {
       text-align: left;
-      width: 30em;
+      width: 48em;
       justify-self: left;
     }
   }
