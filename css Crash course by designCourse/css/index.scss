@@ -3,6 +3,7 @@ body {
   font-size: 62.5%;
   margin: 2.4em;
   font-family: "Poppins", sans-serif;
+  cursor: text;
 }
 
 a {
@@ -29,9 +30,16 @@ a {
 .logo {
   color: white;
   font-weight: bold;
+  background: none !important;
 
   span {
     color: red;
+  }
+
+  a {
+    a:hover {
+      background: none !important;
+    }
   }
 }
 
@@ -138,7 +146,7 @@ section.more-info {
   transform: translateX(0%);
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (max-width: 920px) {
   body {
     margin: 2.4em 8em;
     font-family: "Poppins", sans-serif;
@@ -257,6 +265,22 @@ section.more-info {
 
   .feature {
     gap: 0;
+  }
+
+  .logo {
+    color: white;
+    font-weight: bold;
+    background: none !important;
+
+    span {
+      color: red;
+    }
+
+    a {
+      a:hover {
+        background: none !important;
+      }
+    }
   }
 }
 

@@ -4,6 +4,7 @@ body {
   font-size: 62.5%;
   margin: 2.4em;
   font-family: "Poppins", sans-serif;
+  cursor: text;
 }
 
 a {
@@ -29,10 +30,15 @@ a {
 .logo {
   color: white;
   font-weight: bold;
+  background: none !important;
 }
 
 .logo span {
   color: red;
+}
+
+.logo a a:hover {
+  background: none !important;
 }
 
 nav {
@@ -147,7 +153,7 @@ section.more-info .description {
           transform: translateX(0%);
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (max-width: 920px) {
   body {
     margin: 2.4em 8em;
     font-family: "Poppins", sans-serif;
@@ -253,6 +259,17 @@ section.more-info .description {
   }
   .feature {
     gap: 0;
+  }
+  .logo {
+    color: white;
+    font-weight: bold;
+    background: none !important;
+  }
+  .logo span {
+    color: red;
+  }
+  .logo a a:hover {
+    background: none !important;
   }
 }
 
