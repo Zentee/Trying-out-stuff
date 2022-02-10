@@ -12,7 +12,9 @@ function PageComponent() {
         <li>Getting Better</li>
         <li>Path of Exile</li>
       </ul>
-      <footer>"© 2022 Zent development. All rights reserved."</footer>
+      <footer>
+        <small>"© 2022 Zent development. All rights reserved."</small>
+      </footer>
     </div>
   );
 }
