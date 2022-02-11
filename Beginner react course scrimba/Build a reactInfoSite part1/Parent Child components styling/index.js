@@ -1,8 +1,13 @@
 function Header() {
   return (
     <header>
-      <nav>
-        <img src="img/react-logo.png" width="40px" />
+      <nav className="nav-bar">
+        <img src="img/react-logo.png" className="nav-logo" />
+        <ul className="nav-items">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
       </nav>
     </header>
   );
@@ -10,7 +15,7 @@ function Header() {
 
 function Body() {
   return (
-    <div>
+    <div className="lesson-body">
       <h1>Reasons I'm excited to learn React</h1>
       <ol>
         <li>
@@ -24,7 +29,7 @@ function Body() {
 
 function Footer() {
   return (
-    <div>
+    <div className="footer">
       <footer>
         <small>© 2021 Ziroll development. All rights reserved.</small>
       </footer>
