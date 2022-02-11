@@ -8,7 +8,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import MainContent from "./MainContent";
 
-function App() {
+function Test() {
   return (
     <div>
       <Header />
@@ -18,7 +18,7 @@ function App() {
   );
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Test />, document.getElementById("root"));
 
 /* ReactDOM.render(
   <React.StrictMode>
