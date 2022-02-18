@@ -4,10 +4,13 @@
 
 body {
   margin: 0;
+  background-color: #282d35;
+  font-family: Inter, sans-serif;
+  height: 100%;
+  width: 100%;
 }
 
 .container {
-  font-family: "inter", sans-serif;
 }
 
 .navBar {
@@ -34,4 +37,37 @@ body {
 .navBar > h4 {
   color: white;
   letter-spacing: 0.5px;
+}
+
+.main-container {
+  background-color: #282d35;
+  padding: 57px 27;
+  background-image: url("../src/img/react-half-logo.png");
+  background-repeat: no-repeat;
+  background-position: right bottom 50%;
+}
+
+.main-h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: -0.05em;
+}
+
+.main-ul {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 46px;
+}
+
+.main-ul > li {
+  line-height: 19px;
+  padding-block: 10px;
+  max-width: 600px;
+}
+
+.main-ul > li::marker {
+  color: #00d8ff;
+  margin-right: 7px;
+  font-size: 1.4rem;
 }
