@@ -1,12 +1,22 @@
 import React from "react";
-import Navbar from "../src/components/Navbar";
-import Main from "../src/components/Main";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
+import katieZaferes from "./img/image 12.png";
 
 export default function App() {
+  // <Hero />
   return (
-    <div className="container">
+    <div>
       <Navbar />
-      <Main />
+      <Card
+        img={katieZaferes}
+        rating="5.0"
+        reviewCount={6}
+        country="Ukraine"
+        title="Life lessons with Katie Zaferes"
+        price={136}
+      />
     </div>
   );
 }
