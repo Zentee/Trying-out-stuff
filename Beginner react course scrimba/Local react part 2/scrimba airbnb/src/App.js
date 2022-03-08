@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import katieZaferes from "./img/image 12.png";
+import katieZaferes from "./img/image_12.png";
 
 export default function App() {
   // <Hero />
