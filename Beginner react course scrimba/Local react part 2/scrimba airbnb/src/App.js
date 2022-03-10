@@ -2,21 +2,18 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Card from "./components/Card";
-import katieZaferes from "./img/image_12.png";
+import cardData from "./data";
 
 export default function App() {
+  const cardInfo = cardData.map((card) => (
+    <Card key={card.id} img={`../img/${card.coverImg}`} card={card} />
+  ));
+
   // <Hero />
   return (
     <div>
       <Navbar />
-      <Card
-        img={katieZaferes}
-        rating="5.0"
-        reviewCount={6}
-        country="Ukraine"
-        title="Life lessons with Katie Zaferes"
-        price={136}
-      />
+      <section className="cards-list">{cardInfo}</section>
     </div>
   );
 }
