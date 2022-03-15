@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  border: 0;
+  margin: 0;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 65px;
+  padding: 20px;
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
+  color: #ffffff;
+}
+
+.header-container > img {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header-txt {
+  font-family: "inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+}

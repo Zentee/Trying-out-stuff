@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "inter", sans-serif;
+  border: 0;
+  margin: 0;
+}
+
+.navbar-container {
+  display: flex;
+  background-color: #f55a5a;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 35px;
+  width: 35px;
+}
+
+.navbar-title {
+  color: white;
+  font-size: 1.5rem;
+  padding-left: 15px;
+}
+
+.card-container {
+  padding: 0 30px;
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.card-layout-col {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+
+.card-layout-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-layout-row > img {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+
+.card-country-name {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 12px;
+  letter-spacing: 0.25rem;
+}
+
+.card-google-link {
+  padding-left: 10px;
+  font-size: 0.8rem;
+  color: #918e9b;
+}
+
+.card-google-link > a:link {
+  color: #918e9b;
+}
+.card-google-link > a:visited {
+  color: #918e9b;
+}
+.card-google-link > a:hover {
+  color: #918e9b;
+}
+
+.card-location-name {
+  letter-spacing: 0.05rem;
+}
+
+.card-img {
+  border-radius: 5px;
+  height: 230px;
+  width: 200px;
+}
+
+.card-dates {
+  font-weight: 700;
+  font-size: 0.7rem;
+}
