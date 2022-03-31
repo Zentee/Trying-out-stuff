@@ -1,29 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import memesData from "../memesData";
 
 export default function Meme() {
   let url;
   console.log(url);
+  const [memeImage, setMemeImage] = useState("");
 
   function getMemeImage() {
     const memesArray = memesData.data.memes;
     const randomNumber = Math.floor(Math.random() * memesArray.length);
     url = memesArray[randomNumber].url;
     console.log("I'm doing this");
+    setMemeImage(url);
   }
-
-  /* 
-  let memeImage = memesData.map((ele) => {
-    return (
-      {ele.sucess == true && (
-        <button
-          className="form--button"
-          id={ele.memesArray.id}
-          imgUrl={ele.url}
-        />}
-      )
-    );
-  }); */
 
   function onMouseClick() {
     console.log("I'm working");
@@ -43,6 +32,7 @@ export default function Meme() {
           Get a new meme image 🖼
         </button>
       </div>
+      <img src={memeImage} className="meme-image" />
     </main>
   );
 }
